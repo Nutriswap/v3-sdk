@@ -1,19 +1,19 @@
 {
-  "name": "@uniswap/v3-sdk",
+  "name": "@nutriswap/v3-sdk",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "version": "3.11.0",
-  "description": "⚒️ An SDK for building applications on top of Uniswap V3",
+  "description": "⚒️ An SDK for building applications on top of nutriswap V3",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/Uniswap/uniswap-v3-sdk.git",
+  "repository": "https://github.com/nutriswap/v3-sdk.git",
   "keywords": [
-    "uniswap",
+    "nutriswap",
     "ethereum"
   ],
   "module": "dist/v3-sdk.esm.js",
@@ -26,23 +26,27 @@
   "dependencies": {
     "@ethersproject/abi": "^5.0.12",
     "@ethersproject/solidity": "^5.0.9",
-    "@uniswap/sdk-core": "^4.2.0",
-    "@uniswap/swap-router-contracts": "^1.2.1",
-    "@uniswap/v3-periphery": "^1.1.1",
-    "@uniswap/v3-staker": "1.0.0",
+    "@nutriswap/sdk-core": "https://github.com/Nutriswap/sdk-core.git#main",
+    "@nutriswap/swap-router-contracts": "https://github.com/Nutriswap/swap-router-contracts.git#main",
+    "@nutriswap/v3-core": "https://github.com/Nutriswap/v3-core.git#main",
+    "@nutriswap/v3-periphery": "https://github.com/Nutriswap/v3-periphery.git#main",
+    "@nutriswap/v3-staker": "https://github.com/Nutriswap/v3-staker.git#main",
+    "jsbi": "^4.3.2",
     "tiny-invariant": "^1.1.0",
     "tiny-warning": "^1.0.3"
   },
   "devDependencies": {
+    "@nutriswap/v3-core": "https://github.com/nutriswap/v3-core.git#main",
     "@types/jest": "^24.0.25",
-    "@uniswap/v3-core": "1.0.0",
     "tsdx": "^0.14.1"
   },
   "resolutions": {
-    "regenerator-runtime": "^0.14.1"
+    "regenerator-runtime": "^0.14.1",
+    "jsbi": "^4.3.2"
   },
   "resolutionsComments": {
-    "regenerator-runtime": "Fixes https://github.com/facebook/regenerator/pull/480. It can be removed when `tsdx` updates their dependencies."
+    "regenerator-runtime": "Fixes https://github.com/facebook/regenerator/pull/480. It can be removed when `tsdx` updates their dependencies.",
+    "jsbi": "Force single version across sdk-core and v3-sdk to prevent JSBI type mismatch"
   },
   "engines": {
     "node": ">=10"

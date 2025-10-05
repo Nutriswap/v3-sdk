@@ -1,7 +1,5 @@
-# @uniswap/v3-sdk - Now at `Uniswap/sdks`
+@nutriswap/v3-sdk
 
-All versions after 3.11.0 of this SDK can be found in the [SDK monorepo](https://github.com/Uniswap/sdks/tree/main/sdks/v3-sdk)! Please file all future issues, PR’s, and discussions there.
+⚒️ An SDK for building applications on top of Nutriswap V3.
 
-### Old Issues and PR’s
-
-If you have an issue or open PR that is still active on this SDK in this repository, please recreate it in the new repository. Some existing issues and PR’s may be automatically migrated by the Uniswap Labs team.
+Latest stable version: 3.11.0
